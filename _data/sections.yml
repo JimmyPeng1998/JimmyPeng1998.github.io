@@ -6,7 +6,7 @@
   
 - name: Softwares
   id: projects
-  description: Softwa
+  description: 
   url: projects.html
   first: false
 
