@@ -1,6 +1,13 @@
 - School: Tongji University
-  Degree: Bachelor
+  Degree: 
   Program: School of Mathematical Sciences
-  Start Date: 2017.09
-  End Date: 2021.07
-  Icon: /assets/img/icons/tongji.png      # Make this icon small, think 30px/30px
+  Start Date: 
+  End Date: 
+  Icon: /assets/img/avatar/tongji.png      # Make this icon small, think 30px/30px
+
+- School: University of Chinese Academy of Sciences
+  Degree: 
+  Program: Academy of Mathematics and Systems Science
+  Start Date: 
+  End Date: 
+  Icon: /assets/img/avatar/amss.jpeg      # Make this icon small, think 30px/30px
