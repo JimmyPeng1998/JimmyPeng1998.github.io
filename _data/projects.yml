@@ -1,5 +1,5 @@
 - name: LRTCTR
-  id: lrtctr
+  id: project1
   description: >
     A Matlab solver for low-rank tensor completion in tensor ring decomposition.
   date: true
@@ -11,7 +11,7 @@
 
 
 - name: popman
-  id: popman
+  id: project2
   description: >
     A Matlab solver for preconditioned Riemannian optimization methods on product manifolds.
   date: true
