@@ -10,7 +10,7 @@
 theme: jekyll-theme-Dumbarton
 title: Dumbarton 
 email: 
-description: a minimalistic jekyll theme for academics
+description: Welcome to Renfeng Peng's Homepage!
 baseurl:                                       # the subpath of your site, e.g. /blog
 url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/img/dumbarton.png               # used to generate site link preview
@@ -20,17 +20,17 @@ image_alt: A minimalistic jekyll theme for academic    # image description
 # -----------SITE SETTINGS---------------#
 #========================================#: 
 author: John Doe 
-profile_image: /assets/img/avatar/cropped.png #/assets/img/avatar/avatar.jpeg 
-occupation: 
+profile_image: /assets/img/avatar/prf.jpeg #/assets/img/avatar/avatar.jpeg
+occupation:
 snippet:
-twitter: tbutler0x90
-github: tcbutler320
-linkedin: tyler-b-a700a1aa
+twitter:
+github: JimmyPeng1998
+linkedin:
 stackoverflow: '12935605'
-website: https://tbutler.org
+website:
 codepen: 
 medium: 
-email: developer.tbutler@gmail.com
+email: pengrenfeng@lsec.cc.ac.cn
 keybase: tbutler320
 pgp: 
 ctftime: 
