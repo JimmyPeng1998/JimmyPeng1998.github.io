@@ -1,47 +1,22 @@
-- name: Project 1
-  id: project1
+- name: LRTCTR
+  id: lrtctr
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    A Matlab solver for low-rank tensor completion in tensor ring decomposition.
   date: true
-  link: https://example.com
-  image:  http://placehold.it/100x100
+  link: https://github.com/JimmyPeng1998/LRTCTR
+  image: 
   tech: 
-    - python
+    - Matlab
+    - c
 
 
-- name: Project 2
-  id: project2
+- name: popman
+  id: popman
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+    A Matlab solver for preconditioned Riemannian optimization methods on product manifolds.
   date: true
-  link: https://example.com
-  image: http://placehold.it/100x100
+  link: https://github.com/JimmyPeng1998/popman
+  image: 
   tech: 
-    - c++
+    - Matlab
 
-- name: Project 3
-  id: project3
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  date: true
-  link: https://example.com
-  image:  http://placehold.it/100x100
-  tech: 
-    - Java
-    - Maven
-    - Jenkins
-
-- name: Project 4
-  id: project4
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 0
-  date: true
-  link: https://example.com
-  image: http://placehold.it/100x100
-  tech: 
-    - Sonarcube
-    - Java
