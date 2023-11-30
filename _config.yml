@@ -7,7 +7,7 @@
 # =======================================#
 # -----------BASE SETTINGS---------------#
 #========================================#
-
+theme: jekyll-theme-Dumbarton
 title: Dumbarton 
 email: 
 description: a minimalistic jekyll theme for academics
