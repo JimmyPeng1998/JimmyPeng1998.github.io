@@ -22,25 +22,3 @@
     - c++
 
 
-- name: LRTCTR
-  id: project1
-  description: >
-    A Matlab solver for low-rank tensor completion in tensor ring decomposition.
-  date: true
-  link: https://github.com/JimmyPeng1998/LRTCTR
-  image: http://placehold.it/100x100
-  tech: 
-    - Matlab
-    - c
-
-
-- name: popman
-  id: project2
-  description: >
-    A Matlab solver for preconditioned Riemannian optimization methods on product manifolds.
-  date: true
-  link: https://github.com/JimmyPeng1998/popman
-  image: http://placehold.it/100x100
-  tech: 
-    - Matlab
-
