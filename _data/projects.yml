@@ -1,3 +1,27 @@
+- name: Project 1
+  id: project1
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  date: true
+  link: https://example.com
+  image:  http://placehold.it/100x100
+  tech: 
+    - python
+
+
+- name: Project 2
+  id: project2
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+  date: true
+  link: https://example.com
+  image: http://placehold.it/100x100
+  tech: 
+    - c++
+
+
 - name: LRTCTR
   id: project1
   description: >
