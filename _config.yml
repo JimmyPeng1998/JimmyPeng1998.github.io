@@ -8,11 +8,11 @@
 # -----------BASE SETTINGS---------------#
 #========================================#
 theme: jekyll-theme-Dumbarton
-title: Dumbarton 
+title: Renfeng Peng's Homepage 
 email: 
 description: Welcome to Renfeng Peng's Homepage!
 baseurl:                                       # the subpath of your site, e.g. /blog
-url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jimmypeng1998.github.io/"          # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/img/dumbarton.png               # used to generate site link preview
 image_alt: A minimalistic jekyll theme for academic    # image description
 
@@ -25,13 +25,13 @@ occupation:
 snippet:
 twitter:
 github: JimmyPeng1998
-linkedin:
+linkedin: 
 stackoverflow: '12935605'
-website:
+website: 
 codepen: 
 medium: 
 email: pengrenfeng@lsec.cc.ac.cn
-keybase: tbutler320
+keybase: 
 pgp: 
 ctftime: 
 phonenumber: 
@@ -116,7 +116,7 @@ exclude:
 # -----JEKYLL SCHOLAR SETTINGS-----------#
 #========================================#
 scholar:
-  last_name: Dumbarton
+  last_name: Peng
   style: apa
   locale: en
   source: /_bibliography/
