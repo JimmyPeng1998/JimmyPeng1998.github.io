@@ -4,10 +4,17 @@
   url: publications.html
   first: true
   
-- name: Softwares
-  id: projects
-  description: 
-  url: projects.html
+- name: Coursework
+  id: courses
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  content: 
+  first: false
+
+- name: Teaching
+  id: teaching
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  content: 
+  url: teaching.html
   first: false
 
 - name: Projects
@@ -16,17 +23,3 @@
   content: 
   url: projects.html
   first: false
-
-# - name: Coursework
-#   id: courses
-#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   content: 
-#   first: false
-
-# - name: Teaching
-#   id: teaching
-#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   content: 
-#   url: teaching.html
-#   first: false
-
