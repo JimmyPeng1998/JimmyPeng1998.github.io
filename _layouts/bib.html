@@ -84,7 +84,7 @@
       <!--
       <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-code"></i></a>
       -->
-      <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};" href="{{ entry.code }}"> code </span>
+      <a class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};" href="{{ entry.code }}">code</a>
     {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
