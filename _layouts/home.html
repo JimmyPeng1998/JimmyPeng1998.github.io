@@ -70,6 +70,18 @@ layout: default
       {% else %}
       <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
       {% endif %}
+        <h3 id="i-class-fas-fa-rss-i-updates"><i class="fas fa-rss"></i> Updates</h3>
+        <ul>
+          <li>12-01: new preprint - “<a href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker tensor
+              varieties</a>.”
+          </li>
+          <li>06-15: new preprint - “<a href="https://arxiv.org/abs/2306.08873">Optimization on product manifolds under a
+              preconditioned metric</a>.”
+          </li>
+          <li>03-01: new preprint - “<a href="https://arxiv.org/abs/2302.14456">Riemannian preconditioned algorithms for tensor
+              completion via tensor ring decomposition</a>.”
+          </li>
+        </ul>
         <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}<p>
         {% if site.home_option == "education" %}
           {% include education.html %}
