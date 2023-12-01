@@ -6,7 +6,10 @@ links:
 #  url: about.html
 
 - title: Publications
-  url: publications.html
+  url: #publications
+  
+- title: Softwares
+  url: #projects
 
 # - title: Blog
 #  url: blog.html
@@ -14,5 +17,5 @@ links:
 # - title: Vitae
 #   url: /assets/pdf/vitae.pdf
 
-# - title: Contact
-#   url: contact.html
+- title: Contact
+  url: contact.html
