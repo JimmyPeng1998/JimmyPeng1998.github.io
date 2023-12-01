@@ -692,3 +692,19 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
   font-family: Proxima;
   margin: 5% 0 0 15%;
 }
+
+
+
+
+
+
+.custom-badge {
+    background-color: white; /* 设置默认背景颜色为白色 */
+    color: black; /* 设置默认字体颜色为黑色 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+.custom-badge:hover {
+    background-color: black; /* 鼠标悬停时背景颜色变为黑色 */
+    color: white; /* 鼠标悬停时字体颜色变为白色 */
+}
