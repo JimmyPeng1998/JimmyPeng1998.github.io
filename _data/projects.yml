@@ -1,12 +1,12 @@
 - name: LRTCTR
   id: project1
   description: >
-    A Matlab solver for low-rank tensor completion in tensor ring decomposition.
+    A Matlab solver for low-rank tensor completion in tensor ring decomposition. 
   date: true
   link: https://github.com/JimmyPeng1998/LRTCTR
   image:  http://placehold.it/100x100
   tech: 
-    - matlab
+    - [matlab](https://www.baidu.com)
     - c
 
 
