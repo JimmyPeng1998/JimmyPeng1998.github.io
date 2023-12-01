@@ -5,11 +5,11 @@ links:
 # - title: About
 #  url: about.html
 
-- title: Publications
-  url: publications.html
+# - title: Publications
+#   url: publications.html
   
-- title: Softwares
-  url: projects.html
+# - title: Softwares
+#   url: projects.html
 
 # - title: Blog
 #  url: blog.html
