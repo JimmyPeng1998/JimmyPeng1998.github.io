@@ -70,6 +70,7 @@ layout: default
       {% else %}
       <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
       {% endif %}
+        <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}</p>
         <h3 id="i-class-fas-fa-rss-i-updates"><i class="fas fa-rss"></i> Updates</h3>
         <ul>
           <li>12-01: new preprint - “<a href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker tensor
@@ -82,7 +83,6 @@ layout: default
               completion via tensor ring decomposition</a>.”
           </li>
         </ul>
-        <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}<p>
         {% if site.home_option == "education" %}
           {% include education.html %}
         {% endif %}
