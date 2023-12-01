@@ -4,7 +4,7 @@
     A Matlab solver for low-rank tensor completion in tensor ring decomposition. 
   date: true
   link: https://github.com/JimmyPeng1998/LRTCTR
-  image: /assets/img/icons/coding.jpg
+  image: /assets/img/icons/coding.png
   tech: 
     - matlab
     - c
@@ -16,6 +16,6 @@
     A Matlab solver for preconditioned Riemannian optimization methods on product manifolds.
   date: true
   link: https://github.com/JimmyPeng1998/popman
-  image: http://placehold.it/100x100
+  image: /assets/img/icons/coding.png
   tech: 
     - matlab
