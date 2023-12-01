@@ -63,9 +63,11 @@
     {% if entry.doi %}
       <a href="http://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="ai ai-doi big-icon"></i></a>
     {% endif %}
+    <!--
     {% if entry.html %}
       <a href="{{ entry.html }}" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a>
     {% endif %}
+      -->
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
       <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="ai ai-arxiv big-icon"></i></a>
