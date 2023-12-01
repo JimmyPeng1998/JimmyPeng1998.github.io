@@ -19,3 +19,14 @@
   image: /assets/img/icons/coding.png
   tech: 
     - matlab
+
+- name: TRAM
+  id: project3
+  description: >
+    Tucker rank-adaptive method for Tucker tensor completion.
+  date: true
+  link: https://github.com/JimmyPeng1998/TRAM
+  image: /assets/img/icons/coding.png
+  tech: 
+    - matlab
+    - c
