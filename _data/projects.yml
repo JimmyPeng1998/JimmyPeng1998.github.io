@@ -4,7 +4,7 @@
     A Matlab solver for low-rank tensor completion in tensor ring decomposition. 
   date: true
   link: https://github.com/JimmyPeng1998/LRTCTR
-  image:  
+  image: /assets/img/icons/coding.jpg
   tech: 
     - matlab
     - c
