@@ -30,3 +30,16 @@
   tech: 
     - matlab
     - c
+
+
+
+- name: TuckerDesing
+  id: project4
+  description: >
+    A Matlab solver for low-rank Tucker tensor optimization via desingularization.
+  date: true
+  link: https://github.com/JimmyPeng1998/TuckerDesing
+  image: /assets/img/icons/coding.png
+  tech: 
+    - matlab
+    - c
