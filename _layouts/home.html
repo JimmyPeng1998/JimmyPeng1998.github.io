@@ -79,9 +79,12 @@ layout: default
           <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}</p>
           <h3 id="i-class-fas-fa-rss-i-updates"><i class="fas fa-rss"></i> Updates</h3>
           <ul>
-            <li>2024-11-22: new preprint - “<a href="https://arxiv.org/abs/2411.14093">Desingularization of bounded-rank tensor sets</a>.”
+            <li>2024-11-22: new preprint - “<a href="https://arxiv.org/abs/2411.14093">Desingularization of bounded-rank
+                tensor sets</a>.”
             </li>
-            <li>2024-01-18: new paper accepted in <i>Computational Optimization and Applications</i> - “<a href="https://doi.org/10.1007/s10589-024-00559-7">Riemannian preconditioned algorithms for tensor completion via tensor ring decomposition</a>.”
+            <li>2024-01-18: new paper accepted in <i>Computational Optimization and Applications</i> - “<a
+                href="https://doi.org/10.1007/s10589-024-00559-7">Riemannian preconditioned algorithms for tensor
+                completion via tensor ring decomposition</a>.”
             </li>
             <li>2023-12-01: new preprint - “<a href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker
                 tensor
@@ -134,101 +137,102 @@ layout: default
         <div class="tab-content mt-3">
           {% for section in site.data.sections %}
           {% if section.first %}
-          {% if section.name == "Publications" %}
-          <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-            <p><i>{{section.description}}</i></p>
-            <p class="card-text">{% bibliography -f papers %}</p>
-          </div>
+            {% if section.name == "Publications" %}
+            <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
+              <p><i>{{section.description}}</i></p>
+              <p class="card-text">{% bibliography -f papers %}</p>
+            </div>
+            {% else %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
+              <p class="card-text">{{section.description}}</p>
+            </div>
+            {% endif %}
           {% else %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
-            <p class="card-text">{{section.description}}</p>
-          </div>
+            {% if section.name == "Softwares" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p><i>{{section.description}}</i></p>
+                {% for projects in site.data.projects %}
+                <div class="media mt-2">
+                  <a href="{{ projects.link }}"><img src="{{ projects.image }}" width=30 height=30
+                      class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
+                  <div class="media-body">
+                    <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
+                    {{ projects.description }}
+                    <!--{% if projects.tech %}
+                            <h6><mark><u>Technologies</u></mark></h6> 
+                            {% for tech in projects.tech %}
+                            <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
+                            {% endfor %}
+                          {% endif %}-->
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            {% elsif section.name == "Presentations" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+              <p><i>{{section.description}}</i></p>
+              <div class="col-12 col-lg-8">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Place</th>
+                      <th>Conference</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div style="width: 50pt">2024/11</div>
+                      </td>
+                      <td>
+                        <div style="width: 90pt">Beijing, China</div>
+                      </td>
+                      <td><a href="https://lsec.cc.ac.cn/~yblt24/" target="_blank" rel="noopener"> The 7th PKU PhD
+                          Symposium for
+                          Applied
+                          Mathematics</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            {% elsif section.name == "Teaching" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+              <p><i>{{section.description}}</i></p>
+              {% for courses in site.data.teaching %}
+              <div class="list-group">
+                <div class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ courses.Schoool }}</h5>
+                    <p>{{ courses.Program }}</p>
+                    <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
+                  </div>
+                  <p class="mb-1">{{ courses.description }}</p>
+                  <small>{{ courses.Department }}</small>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            {% elsif section.name == "Coursework" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+              <p><i>{{section.description}}</i></p>
+              <div class="list-group">
+                {% for courses in site.data.courses %}
+                <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
+                {% endfor %}
+              </div>
+            </div>
+            {% else %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+              <h5 class="card-title text-center"><a href="/{{ section.url }}"
+                  class="highlighted">{{section.description}}</a></h5>
+              <p class="card-text">{{ section.content }} </p>
+            </div>
+            {% endif %}
           {% endif %}
-          {% else %}
-          {% if section.name == "Softwares" %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-            <p><i>{{section.description}}</i></p>
-            {% for projects in site.data.projects %}
-            <div class="media mt-2">
-              <a href="{{ projects.link }}"><img src="{{ projects.image }}" width=30 height=30
-                  class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
-              <div class="media-body">
-                <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
-                {{ projects.description }}
-                <!--{% if projects.tech %}
-                         <h6><mark><u>Technologies</u></mark></h6> 
-                        {% for tech in projects.tech %}
-                        <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
-                        {% endfor %}
-                      {% endif %}-->
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% elsif section.name == "Presentations" %}
-        <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-          <p><i>{{section.description}}</i></p>
-          <div class="col-12 col-lg-8">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Place</th>
-                  <th>Conference</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div style="width: 50pt">2024/11</div>
-                  </td>
-                  <td>
-                    <div style="width: 90pt">Beijing, China</div>
-                  </td>
-                  <td><a href="https://lsec.cc.ac.cn/~yblt24/" target="_blank" rel="noopener"> The 7th PKU PhD Symposium for
-                      Applied
-                      Mathematics</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        {% elsif section.name == "Teaching" %}
-        <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-          <p><i>{{section.description}}</i></p>
-          {% for courses in site.data.teaching %}
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">{{ courses.Schoool }}</h5>
-                <p>{{ courses.Program }}</p>
-                <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
-              </div>
-              <p class="mb-1">{{ courses.description }}</p>
-              <small>{{ courses.Department }}</small>
-            </div>
-          </div>
           {% endfor %}
         </div>
-        {% elsif section.name == "Coursework" %}
-        <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-          <p><i>{{section.description}}</i></p>
-          <div class="list-group">
-            {% for courses in site.data.courses %}
-            <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
-            {% endfor %}
-          </div>
-        </div>
-        {% else %}
-        <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-          <h5 class="card-title text-center"><a href="/{{ section.url }}"
-              class="highlighted">{{section.description}}</a></h5>
-          <p class="card-text">{{ section.content }} </p>
-        </div>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
       </div>
     </div>
   </div>
