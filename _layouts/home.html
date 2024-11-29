@@ -171,6 +171,7 @@ layout: default
             {% elsif section.name == "Presentations" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
               <p><i>{{section.description}}</i></p>
+              <div class="mbtablestyle">
                 <table>
                   <thead>
                     <tr>
@@ -197,6 +198,7 @@ layout: default
                     </tr>
                   </tbody>
                 </table>
+              </div>
             </div>
             {% elsif section.name == "Selected awards" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
