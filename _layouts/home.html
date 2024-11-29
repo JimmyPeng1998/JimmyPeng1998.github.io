@@ -146,10 +146,31 @@ layout: default
           {% endif %}
           {% else %}
           {% if section.name == "Presentations" %}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Place</th>
+                <th>Conference</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div style="width: 50pt">2024/11</div>
+                </td>
+                <td>
+                  <div style="width: 90pt">Beijing, China</div>
+                </td>
+                <td><a href="https://lsec.cc.ac.cn/~yblt24/" target="_blank" rel="noopener"> The 7th PKU PhD Symposium for Applied Mathematics</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <!--
           <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
             <p class="card-text">{% bibliography -f presentations %}</p>
-          </div>
+          </div>-->
           {% elsif section.name == "Softwares" %}
           <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>

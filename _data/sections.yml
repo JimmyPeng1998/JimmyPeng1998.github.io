@@ -23,3 +23,11 @@
   content: 
   url: projects.html
   first: false
+
+
+- name: Presentations
+  id: presentation
+  description: 
+  content: 
+  url: presentation.html
+  first: false
