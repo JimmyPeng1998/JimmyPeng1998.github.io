@@ -27,7 +27,15 @@
 
 - name: Presentations
   id: presentation
-  description: 
+  description: Selected presentations
+  content: 
+  url: presentation.html
+  first: false
+
+
+- name: Selected awards
+  id: awards
+  description: Selected awards
   content: 
   url: presentation.html
   first: false
