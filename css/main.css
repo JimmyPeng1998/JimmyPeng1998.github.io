@@ -605,12 +605,26 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
 }
 } 
 
-a:link {color: black;}      /* unvisited link */
-a:visited {color: black;}   /* visited link */
-a:hover {color: black;}     /* mouse over link */
-a:active {color: black;}    /* selected link */
 
+/* a:link {color: black;}*/      /* unvisited link */
+/* a:visited {color: black;} */   /* visited link */
+/* a:hover {color: black;}*/     /* mouse over link */
+/* a:active {color: black;}*/    /* selected link */
 
+a {
+  color: #4CAF50;
+  /* 绿色 */
+  text-decoration: none;
+  /* 去掉下划线 */
+}
+
+a:hover {
+  color: #388E3C;
+    text-decoration: underline;
+}
+a:visited {
+  color: #2E7D32;
+}
 
 /* regular - font-weight: 400 */
 @font-face {
