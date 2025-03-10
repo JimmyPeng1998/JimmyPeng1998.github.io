@@ -43,3 +43,14 @@
   tech: 
     - matlab
     - c
+
+- name: TuckerApoFree
+  id: project5
+  description: >
+    First-order methods for low-rank Tucker tensor optimization converging to stationary points.
+  date: true
+  link: https://github.com/JimmyPeng1998/TuckerApoFree
+  image: /assets/img/icons/coding.png
+  tech: 
+    - matlab
+    - c
