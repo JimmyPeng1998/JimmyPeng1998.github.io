@@ -54,3 +54,14 @@
   tech: 
     - matlab
     - c
+
+- name: GeomNTT
+  id: project6
+  description: >
+    A Matlab solver for optimization on NTT tensors.
+  date: true
+  link: https://github.com/JimmyPeng1998/GeomNTT
+  image: /assets/img/icons/coding.png
+  tech: 
+    - matlab
+    - c
