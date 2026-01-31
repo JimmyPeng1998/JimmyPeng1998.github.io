@@ -87,20 +87,31 @@ layout: default
           <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}</p>
           <h3 id="i-class-fas-fa-rss-i-updates"><i class="fas fa-rss"></i> Updates</h3>
           <ul>
-            <li>2025-11-06: new preprint “<a href="https://arxiv.org/abs/2511.04369">Normalized tensor train decomposition</a>.”
-            <li>2025-05-02: new paper accepted in <i>SIAM Journal on Matrix Analysis and Applications</i> - “<a href="https://doi.org/10.1137/24M1643773">Optimization on product manifolds under a preconditioned metric</a>.”
+            <li>2026-01-30: new preprint “<a href="https://arxiv.org/abs/2601.21874">Quotient geometry of tensor ring
+                decomposition</a>.”</li>
+            <li>2025-11-06: new preprint “<a href="https://arxiv.org/abs/2511.04369">Normalized tensor train
+                decomposition</a>.”</li>
+            <li>2025-05-02: new paper accepted in <i>SIAM Journal on Matrix Analysis and Applications</i> - “<a
+                href="https://doi.org/10.1137/24M1643773">Optimization on product manifolds under a preconditioned
+                metric</a>.”</li>
+            <li>2025-04-12: new conference paper accepted in <i>ISIT 2025</i>- “<a
+                href="https://doi.org/10.1109/ISIT63088.2025.11195337">Riemannian optimization for Holevo capacity</a>.”
             </li>
-            <li>2025-04-12: new conference paper accepted in <i>ISIT 2025</i>- “<a href="https://doi.org/10.1109/ISIT63088.2025.11195337">Riemannian optimization for Holevo capacity</a>.”
+            <li>2025-03-07: new preprint - “<a href="https://arxiv.org/abs/2503.04523">First-order methods on
+                bounded-rank tensors converging to stationary points</a>.”
             </li>
-            <li>2025-03-07: new preprint - “<a href="https://arxiv.org/abs/2503.04523">First-order methods on bounded-rank tensors converging to stationary points</a>.”
+            <li>2025-01-22: new preprint - “<a href="https://arxiv.org/abs/2501.11576">Riemannian optimization for
+                Holevo capacity</a>.”
             </li>
-            <li>2025-01-22: new preprint - “<a href="https://arxiv.org/abs/2501.11576">Riemannian optimization for Holevo capacity</a>.”
+            <li>2024-12-13: new paper accepted in <i>Mathematical Programming</i> - “<a
+                href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker tensor varieties</a>.”
             </li>
-            <li>2024-12-13: new paper accepted in <i>Mathematical Programming</i> - “<a href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker tensor varieties</a>.”
+            <li>2024-11-22: new preprint - “<a href="https://arxiv.org/abs/2411.14093">Desingularization of bounded-rank
+                tensor sets</a>.”
             </li>
-            <li>2024-11-22: new preprint - “<a href="https://arxiv.org/abs/2411.14093">Desingularization of bounded-rank tensor sets</a>.”
-            </li>
-            <li>2024-01-18: new paper accepted in <i>Computational Optimization and Applications</i> - “<a href="https://doi.org/10.1007/s10589-024-00559-7">Riemannian preconditioned algorithms for tensor completion via tensor ring decomposition</a>.”
+            <li>2024-01-18: new paper accepted in <i>Computational Optimization and Applications</i> - “<a
+                href="https://doi.org/10.1007/s10589-024-00559-7">Riemannian preconditioned algorithms for tensor
+                completion via tensor ring decomposition</a>.”
             </li>
             <!--
             <li>2023-12-01: new preprint - “<a href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker tensor varieties</a>.”
@@ -108,8 +119,10 @@ layout: default
             <li>2023-06-15: new preprint - “<a href="https://arxiv.org/abs/2306.08873">Optimization on product manifolds under a preconditioned metric</a>.”
             </li>-->
           </ul>
+          <!--
           <h3 id="i-class-fas-fa-rss-i-updates"><i class="fas fa-ad"></i> Looking for a Postdoctoral Position (from July 2026)</h3>
           <p>I am currently seeking a postdoctoral position starting in July 2026. Please feel free to contact me if you think there might be a good fit.</p>
+          -->
           {% if site.home_option == "education" %}
           {% include education.html %}
           {% endif %}
@@ -152,165 +165,173 @@ layout: default
         <div class="tab-content mt-3">
           {% for section in site.data.sections %}
           {% if section.first %}
-            {% if section.name == "Publications" %}
-            <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-              <p><i>{{section.description}}</i></p>
-              <p class="card-text">{% bibliography -f papers %}</p>
-            </div>
-            {% else %}
-            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
-              <p class="card-text">{{section.description}}</p>
-            </div>
-            {% endif %}
+          {% if section.name == "Publications" %}
+          <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
+            <p><i>{{section.description}}</i></p>
+            <p class="card-text">{% bibliography -f papers %}</p>
+          </div>
           {% else %}
-            {% if section.name == "Softwares" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-                <p><i>{{section.description}}</i></p>
-                {% for projects in site.data.projects %}
-                <div class="media mt-2">
-                  <a href="{{ projects.link }}"><img src="{{ projects.image }}" width=30 height=30
-                      class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
-                  <div class="media-body">
-                    <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
-                    {{ projects.description }}
-                    <!--{% if projects.tech %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
+            <p class="card-text">{{section.description}}</p>
+          </div>
+          {% endif %}
+          {% else %}
+          {% if section.name == "Softwares" %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+            <p><i>{{section.description}}</i></p>
+            {% for projects in site.data.projects %}
+            <div class="media mt-2">
+              <a href="{{ projects.link }}"><img src="{{ projects.image }}" width=30 height=30
+                  class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
+              <div class="media-body">
+                <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
+                {{ projects.description }}
+                <!--{% if projects.tech %}
                             <h6><mark><u>Technologies</u></mark></h6> 
                             {% for tech in projects.tech %}
                             <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
                             {% endfor %}
                           {% endif %}-->
-                  </div>
-                </div>
-                {% endfor %}
-              </div>
-            {% elsif section.name == "Presentations" %}
-            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-              <p><i>{{section.description}}</i></p>
-              <div class="mbtablestyle">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>Place</th>
-                      <th>Conference</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div style="width: 80pt">2025/08</div>
-                      </td>
-                      <td>
-                        <div style="width: 160pt">Harbin, China</div>
-                      </td>
-                      <td> 
-                        <a href="https://lsec.cc.ac.cn/~icnonla25/info.html" target="_blank" rel="noopener"> The 15th International Conference on Numerical Optimization and Numerical Linear Algebra
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div style="width: 80pt">2025/07</div>
-                      </td>
-                      <td>
-                        <div style="width: 160pt">Los Angeles, U.S.</div>
-                      </td>
-                      <td> 
-                        <a href="https://iccopt2025usc.sched.com/event/1dqqC/parallel-sessions-6q-optimization-on-riemannian-manifolds-and-stratified-sets-22" target="_blank" rel="noopener"> International conference on continuous optimization
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div style="width: 80pt">2024/11</div>
-                      </td>
-                      <td>
-                        <div style="width: 160pt">Beijing, China</div>
-                      </td>
-                      <td> The 7th PKU PhD Symposium for Applied Mathematics
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
-            {% elsif section.name == "Selected awards" %}
-            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-              <p><i>{{section.description}}</i></p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>Award</th>
-                      <th>Presenter</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div style="width: 80pt">2025/09</div>
-                      </td>
-                      <td>
-                        <div style="width: 240pt">AMSS President's Special Award</div>
-                      </td>
-                      <td>
-                        <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><div style="width: 80pt">2024/09</div></td>
-                      <td><div style="width: 240pt">Loo-Keng Hua Scholarship</div></td>
-                      <td>
-                        <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><div style="width: 80pt">2021/09</div></td>
-                      <td>
-                        <div style="width: 240pt">Loo-Keng Hua Scholarship</div>
-                      </td>
-                      <td>
-                        <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            {% endfor %}
+          </div>
+          {% elsif section.name == "Presentations" %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+            <p><i>{{section.description}}</i></p>
+            <div class="mbtablestyle">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Place</th>
+                    <th>Conference</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div style="width: 80pt">2025/08</div>
+                    </td>
+                    <td>
+                      <div style="width: 160pt">Harbin, China</div>
+                    </td>
+                    <td>
+                      <a href="https://lsec.cc.ac.cn/~icnonla25/info.html" target="_blank" rel="noopener"> The 15th
+                        International Conference on Numerical Optimization and Numerical Linear Algebra
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div style="width: 80pt">2025/07</div>
+                    </td>
+                    <td>
+                      <div style="width: 160pt">Los Angeles, U.S.</div>
+                    </td>
+                    <td>
+                      <a href="https://iccopt2025usc.sched.com/event/1dqqC/parallel-sessions-6q-optimization-on-riemannian-manifolds-and-stratified-sets-22"
+                        target="_blank" rel="noopener"> International conference on continuous optimization
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div style="width: 80pt">2024/11</div>
+                    </td>
+                    <td>
+                      <div style="width: 160pt">Beijing, China</div>
+                    </td>
+                    <td> The 7th PKU PhD Symposium for Applied Mathematics
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            {% elsif section.name == "Teaching" %}
-            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-              <p><i>{{section.description}}</i></p>
-              {% for courses in site.data.teaching %}
-              <div class="list-group">
-                <div class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{ courses.Schoool }}</h5>
-                    <p>{{ courses.Program }}</p>
-                    <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
-                  </div>
-                  <p class="mb-1">{{ courses.description }}</p>
-                  <small>{{ courses.Department }}</small>
+          </div>
+          {% elsif section.name == "Selected awards" %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+            <p><i>{{section.description}}</i></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Award</th>
+                  <th>Presenter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div style="width: 80pt">2025/09</div>
+                  </td>
+                  <td>
+                    <div style="width: 240pt">AMSS President's Special Award</div>
+                  </td>
+                  <td>
+                    <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div style="width: 80pt">2024/09</div>
+                  </td>
+                  <td>
+                    <div style="width: 240pt">Loo-Keng Hua Scholarship</div>
+                  </td>
+                  <td>
+                    <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div style="width: 80pt">2021/09</div>
+                  </td>
+                  <td>
+                    <div style="width: 240pt">Loo-Keng Hua Scholarship</div>
+                  </td>
+                  <td>
+                    <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          {% elsif section.name == "Teaching" %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+            <p><i>{{section.description}}</i></p>
+            {% for courses in site.data.teaching %}
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">{{ courses.Schoool }}</h5>
+                  <p>{{ courses.Program }}</p>
+                  <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
                 </div>
+                <p class="mb-1">{{ courses.description }}</p>
+                <small>{{ courses.Department }}</small>
               </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% elsif section.name == "Coursework" %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+            <p><i>{{section.description}}</i></p>
+            <div class="list-group">
+              {% for courses in site.data.courses %}
+              <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
               {% endfor %}
             </div>
-            {% elsif section.name == "Coursework" %}
-            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-              <p><i>{{section.description}}</i></p>
-              <div class="list-group">
-                {% for courses in site.data.courses %}
-                <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
-                {% endfor %}
-              </div>
-            </div>
-            {% else %}
-            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-              <h5 class="card-title text-center"><a href="/{{ section.url }}"
-                  class="highlighted">{{section.description}}</a></h5>
-              <p class="card-text">{{ section.content }} </p>
-            </div>
-            {% endif %}
+          </div>
+          {% else %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+            <h5 class="card-title text-center"><a href="/{{ section.url }}"
+                class="highlighted">{{section.description}}</a></h5>
+            <p class="card-text">{{ section.content }} </p>
+          </div>
+          {% endif %}
           {% endif %}
           {% endfor %}
         </div>
