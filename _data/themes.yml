@@ -1,7 +1,5 @@
 abyss:
     name: abyss
-    background-color: "#000000"
-    home-background-color: "#000000"
     nav-color: "#10292e"
     nav-text: "#149f98"
     title-font: "Noto Sans JP"
@@ -73,5 +71,6 @@ dark:
     post-font-weight: "700"
     default-button-color: ""
     social-color-footer : black
+
 
 
