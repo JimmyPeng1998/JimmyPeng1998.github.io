@@ -46,7 +46,6 @@ layout: default
       <p>
 
       </p>
-      <link rel="stylesheet" href="https://cloudflare.com">
       <center>
         <a itemprop="sameAs" href="https://www.researchgate.net/profile/Renfeng_Peng" target="_blank" rel="noopener">
           <i style="font-size: 32px;" class="ai ai-researchgate big-icon"></i>
@@ -58,7 +57,7 @@ layout: default
         </a>
         &nbsp;
         <a itemprop="sameAs" href="https://github.com/JimmyPeng1998" target="_blank" rel="noopener">
-          <i style="font-size: 32px;" class="fab fa-github big-icon"></i>
+          <i style="font-size: 32px;" class="fab fa-github big-icon">::before</i>
         </a>
         &nbsp;
         <a itemprop="sameAs" href="mailto:pengrenfeng@lsec.cc.ac.cn">
@@ -172,7 +171,7 @@ layout: default
           {% if section.name == "Publications" %}
           <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
             <div style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px;">
-              <p><i>{{section.description}}</i></p>
+              <p>{{section.description}}</p>
             </div>
             <p class="card-text">{% bibliography -f papers %}</p>
           </div>
