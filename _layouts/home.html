@@ -46,6 +46,7 @@ layout: default
       <p>
 
       </p>
+      <link rel="stylesheet" href="https://cloudflare.com">
       <center>
         <a itemprop="sameAs" href="https://www.researchgate.net/profile/Renfeng_Peng" target="_blank" rel="noopener">
           <i style="font-size: 32px;" class="ai ai-researchgate big-icon"></i>
@@ -170,7 +171,9 @@ layout: default
           {% if section.first %}
           {% if section.name == "Publications" %}
           <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-            <p><i>{{section.description}}</i></p>
+            <div style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px;">
+              <p><i>{{section.description}}</i></p>
+            </div>
             <p class="card-text">{% bibliography -f papers %}</p>
           </div>
 
