@@ -87,6 +87,7 @@ layout: default
           <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}</p>
           <h3 id="i-class-fas-fa-rss-i-updates"><i class="fas fa-rss"></i> Updates</h3>
           <ul>
+            <li>2026-04-29: I have successfully defended my PhD dissertation.</li>
             <li>2026-01-30: new preprint “<a href="https://arxiv.org/abs/2601.21874">Quotient geometry of tensor ring
                 decomposition</a>.”</li>
             <li>2025-11-06: new preprint “<a href="https://arxiv.org/abs/2511.04369">Normalized tensor train
@@ -172,6 +173,50 @@ layout: default
             <p><i>{{section.description}}</i></p>
             <p class="card-text">{% bibliography -f papers %}</p>
           </div>
+
+          <div class="thesis-entry" style="font-family: sans-serif; line-height: 1.6; margin-bottom: 20px;">
+            <!-- 標題與圖示 -->
+            <div style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px;">
+              🎓 Thesis
+            </div>
+
+            <!-- 論文資訊 -->
+            <div style="margin-bottom: 12px; color: #333;">
+              低秩张量优化问题的几何方法,
+              <em>Geometric methods for low-rank tensor optimization.</em>
+              Ph.D. thesis, University of Chinese Academy of Sciences (2026, in Chinese).
+            </div>
+
+            <!-- 按鈕組 -->
+            <div class="links">
+              <a href="/assets/pdf/Thesis_Renfeng.pdf" target="_blank" style="
+                      display: inline-block;
+                      padding: 6px 12px;
+                      background-color: #007bff;
+                      color: white;
+                      text-decoration: none;
+                      border-radius: 4px;
+                      font-size: 14px;
+                      margin-right: 10px;">
+                📄 PDF
+              </a>
+
+              <a href="/assets/pdf/Thesis_defense_Renfeng.pdf" target="_blank" style="
+                      display: inline-block;
+                      padding: 6px 12px;
+                      background-color: #6c757d;
+                      color: white;
+                      text-decoration: none;
+                      border-radius: 4px;
+                      font-size: 14px;">
+                📊 Slides
+              </a>
+            </div>
+          </div>
+
+
+
+
           {% else %}
           <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
             <p class="card-text">{{section.description}}</p>
