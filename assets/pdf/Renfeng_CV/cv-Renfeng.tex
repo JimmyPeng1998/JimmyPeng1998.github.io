@@ -1,0 +1,138 @@
+% !TeX spellcheck = <none>
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = xelatex
+\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+
+% Uncomment to enable Chinese; needs XeLaTeX
+% \usepackage{ctex}
+
+
+% Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
+\PassOptionsToPackage{backend=biber,maxbibnames=99,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+
+\bibliographystyle{siamplain}
+
+
+
+
+
+
+
+
+% Most commands and style definitions are in settings.sty.
+\usepackage{settings}
+
+% If you need to further customise your biblatex setup e.g. with \DeclareFieldFormat etc please add them here AFTER loading settings.sty. For example, to remove the default "[Online] Available:" prefix before URLs when using the IEEE style:
+\DefineBibliographyStrings{english}{url={\textsc{url}}}
+
+%% Only needed if you want a Publication List
+\addbibresource{own-bib.bib}
+
+
+
+
+\DeclareBibliographyCategory{journal}
+\DeclareBibliographyCategory{archive}
+\addtocategory{archive}{gao2025first}
+\addtocategory{archive}{zhHu2025}
+\addtocategory{archive}{C03}
+
+
+%% Specify your last name(s) and first name(s) (as given in the .bib) to automatically bold your own name in the publications list. 
+%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+% \mynames{Lim/Lian\bibnamedelima Tze}
+
+%% You can specify multiple names like this, especially if you have changed your name or if you need to highlight multiple authors. See items 6–9 in the example "Journal Articles" output.
+\mynames{Peng/Renfeng,
+  Peng/Ren-Feng}
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+% Change the fonts if you want
+\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
+  \usepackage{fontspec} 
+  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
+%  \usepackage{FiraSans}
+  \setmainfont[
+  UprightFont = * Light,
+  BoldFont    = * Regular
+  ]{Fira Sans}
+  \linespread{1.03}
+%  \usepackage[p,osf,swashQ]{cochineal}
+%  \usepackage[medium,bold]{cabin}
+%  \usepackage[varqu,varl,scale=0.9]{zi4}
+%  \usepackage{fontspec}
+\else % If you're using pdfLaTeX or latex
+  \usepackage[T1]{fontenc}
+%  \usepackage{sourcesanspro}
+	\usepackage{FiraSans}
+  \renewcommand{\familydefault}{\sfdefault}
+%  \usepackage[p,osf,swashQ]{cochineal}
+%  \usepackage[medium,bold]{cabin}
+%  \usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+% Change the page margins if you want
+% \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
+
+% Change the colours if you want
+% \definecolor{SwishLineColour}{HTML}{00FFFF}
+% \definecolor{MarkerColour}{HTML}{0000CC}
+
+% Change the item prefix marker if you want
+% \prefixmarker{$\diamond$}
+
+%% Photo is only shown if "fullonly" is included
+\includecomment{fullonly}
+% \excludecomment{fullonly}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Refer to https://www.ipgp.fr/~moguilny/LaTeX/fontawesome5Icons.pdf
+\leftheader{%
+  {\LARGE\bfseries\sffamily Renfeng Peng}
+
+  \makefield{\faEnvelope[regular]}{\href{mailto:pengrenfeng@lsec.cc.ac.cn}{\texttt{pengrenfeng a.t. lsec.cc.ac.cn}}}  \makefield{\faGlobe}{\url{http://jimmypeng1998.github.io/}}
+
+  \makefield{\faBirthdayCake}{Sept. 30th, 1998, Changde, Hunan}
+  ~\makefield{\faGoogle}{\href{https://scholar.google.com/citations?user=7CSaSTwAAAAJ&hl=zh-CN}{Renfeng Peng at Google scholar}}
+  % \makefield{\faPhone}{0086 18874831973}
+
+  \makefield{\faMapMarker}{Room 101, Lanbai Building, No.55, East Zhongguancun Road, Beijing 100190, China}
+  % fontawesome5 doesn't have the X icon so we use
+  % the simpleicons package here instead; but some 
+  % font size adjustment might be needed
+  % \makefield{{\scriptsize\simpleicon{x}}}{\!\href{https://x.com/overleaf_example}{\texttt{@overleaf\_example}}}
+  % \makefield{\faLinkedin}
+  % {\href{http://www.linkedin.com/in/example/}{\texttt{example}}}
+
+  %% Next line
+  % You can use a tabular here if you want to line up the fields.
+}
+
+\rightheader{~}
+\begin{fullonly}
+\photo[r]{photo}
+\photoscale{0.13}
+\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+
+% \makerubric{employment}
+\makerubric{education}
+\makerubric{work}
+
+% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
+%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
+\input{publications}
+
+\makerubric{skills}
+\makerubric{awards}
+\makerubric{pre}
+\makerubric{referee}
+% \input{referee-full}
+
+\end{document}

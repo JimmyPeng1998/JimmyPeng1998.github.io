@@ -1,0 +1,439 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{gao2026quotient}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f579eac1a41797a48b84021d664076c3}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Ya-xiang},
+           giveni={Y\bibinithyphendelim x\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{fullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{bibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorbibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authornamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorfullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv preprint arXiv:2601.21874}
+      \field{title}{Quotient geometry of tensor ring decomposition}
+      \field{year}{2026}
+      \true{nocite}
+      \keyw{arXiv}
+    \endentry
+    \entry{gao2025first}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f579eac1a41797a48b84021d664076c3}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Ya-xiang},
+           giveni={Y\bibinithyphendelim x\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{fullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{bibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorbibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authornamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorfullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv preprint arXiv:2503.04523}
+      \field{title}{First-order methods on bounded-rank tensors converging to stationary points}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/abs/2503.04523
+      \endverb
+      \keyw{arXiv}
+    \endentry
+    \entry{gao2025lowrank}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f579eac1a41797a48b84021d664076c3}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Ya-xiang},
+           giveni={Y\bibinithyphendelim x\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{fullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{bibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorbibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authornamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorfullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Programming}
+      \field{title}{Low-rank optimization on {Tucker} tensor varieties}
+      \field{volume}{214}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{357\bibrangedash 407}
+      \range{pages}{51}
+      \verb{doi}
+      \verb 10.1007/s10107-024-02186-w
+      \endverb
+      \verb{file}
+      \verb https://arxiv.org/abs/2311.18324
+      \endverb
+      \keyw{journal}
+    \endentry
+    \entry{gao2025optimization}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f579eac1a41797a48b84021d664076c3}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Ya-xiang},
+           giveni={Y\bibinithyphendelim x\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{fullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{bibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorbibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authornamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorfullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Matrix Analysis and Applications}
+      \field{number}{3}
+      \field{title}{Optimization on product manifolds under a preconditioned metric}
+      \field{volume}{46}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{1816\bibrangedash 1845}
+      \range{pages}{30}
+      \verb{doi}
+      \verb https://epubs.siam.org/doi/abs/10.1137/24M1643773
+      \endverb
+      \keyw{journal}
+    \endentry
+    \entry{peng2025normalized}{article}{}
+      \name{author}{5}{}{%
+        {{un=1,uniquepart=given,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=09a15d73fd2afa785fc69e6fe87a43ff}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Chengkai},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3e23852937fa39b0e34246c4ecd1d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f579eac1a41797a48b84021d664076c3}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Ya-xiang},
+           giveni={Y\bibinithyphendelim x\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c664e371898476369bf767527bd998d3}
+      \strng{fullhash}{8bf66814e389d823d74f2036b69daa6d}
+      \strng{bibnamehash}{8bf66814e389d823d74f2036b69daa6d}
+      \strng{authorbibnamehash}{8bf66814e389d823d74f2036b69daa6d}
+      \strng{authornamehash}{c664e371898476369bf767527bd998d3}
+      \strng{authorfullhash}{8bf66814e389d823d74f2036b69daa6d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv preprint arXiv:2511.04369}
+      \field{title}{Normalized tensor train decomposition}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/abs/2511.04369
+      \endverb
+      \keyw{arXiv}
+    \endentry
+    \entry{zhu2025riemannian}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=09a15d73fd2afa785fc69e6fe87a43ff}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Chengkai},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3e23852937fa39b0e34246c4ecd1d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b2f15fbecbf84b0be70a39750e8e7a43}
+      \strng{fullhash}{44e05b7e0ce40fdeefd7638294c0ce10}
+      \strng{bibnamehash}{44e05b7e0ce40fdeefd7638294c0ce10}
+      \strng{authorbibnamehash}{44e05b7e0ce40fdeefd7638294c0ce10}
+      \strng{authornamehash}{b2f15fbecbf84b0be70a39750e8e7a43}
+      \strng{authorfullhash}{44e05b7e0ce40fdeefd7638294c0ce10}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2025 IEEE International Symposium on Information Theory (ISIT)}
+      \field{title}{Riemannian Optimization for {Holevo} Capacity}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ISIT63088.2025.11195337
+      \endverb
+      \verb{file}
+      \verb https://arxiv.org/abs/2501.11576
+      \endverb
+      \keyw{journal}
+    \endentry
+    \entry{gao2024desingularization}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f579eac1a41797a48b84021d664076c3}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Ya-xiang},
+           giveni={Y\bibinithyphendelim x\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{fullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{bibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorbibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authornamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorfullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \field{extraname}{5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv preprint arXiv:2411.14093}
+      \field{title}{Desingularization of bounded-rank tensor sets}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{file}
+      \verb https://arxiv.org/abs/2411.14093
+      \endverb
+      \keyw{arXiv}
+    \endentry
+    \entry{gao2024riemannian}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=2ec198608be3541bf860716fd1281c94}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f579eac1a41797a48b84021d664076c3}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Ya-xiang},
+           giveni={Y\bibinithyphendelim x\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{fullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{bibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorbibnamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authornamehash}{51e5acd8f85d703f260d227c21f7a27b}
+      \strng{authorfullhash}{51e5acd8f85d703f260d227c21f7a27b}
+      \field{extraname}{6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Optimization and Applications}
+      \field{title}{Riemannian preconditioned algorithms for tensor completion via tensor ring decomposition}
+      \field{volume}{88}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{443\bibrangedash 468}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/s10589-024-00559-7
+      \endverb
+      \verb{file}
+      \verb https://arxiv.org/abs/2302.14456
+      \endverb
+      \keyw{journal}
+    \endentry
+    \entry{zhang2021second}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=be4bc0e66a4c1796572b323ca8de2e91}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ling-Xi},
+           giveni={L\bibinithyphendelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=2d3a3319371330429721255f1a799431}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Ren-Feng},
+           giveni={R\bibinithyphendelim F\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=5be197d7e10dc5ac714ad42d58f26a1d}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Jun-Feng},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08abcef233c9158f658db8e44e3fdc16}
+      \strng{fullhash}{08abcef233c9158f658db8e44e3fdc16}
+      \strng{bibnamehash}{08abcef233c9158f658db8e44e3fdc16}
+      \strng{authorbibnamehash}{08abcef233c9158f658db8e44e3fdc16}
+      \strng{authornamehash}{08abcef233c9158f658db8e44e3fdc16}
+      \strng{authorfullhash}{08abcef233c9158f658db8e44e3fdc16}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{East Asian J. Appl. Math}
+      \field{title}{A second order numerical scheme for fractional option pricing models}
+      \field{volume}{11}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{326\bibrangedash 348}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.4208/eajam.020820.121120
+      \endverb
+      \keyw{journal}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
