@@ -56,7 +56,8 @@ layout: default
           <i style="font-size: 32px;" class="ai ai-google-scholar big-icon"></i>
         </a>
         &nbsp;
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a itemprop="sameAs" href="https://github.com/JimmyPeng1998" target="_blank" rel="noopener">
           <i style="font-size: 32px;" class="fa fa-github big-icon"></i>
         </a>
@@ -149,15 +150,15 @@ layout: default
           {% for section in site.data.sections %}
           {% if section.first %}
           <li class="nav-item">
-            <a class="nav-link shadow-none" id="{{ section.jsid }}" href="#{{section.id}}" role="tab"
+            <a class="nav-link shadow-none" id="{{ section.id }}-tab" href="#{{section.id}}" role="tab"
               aria-controls="{{section.id}}" aria-selected="true"
               style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
               {{section.name}}</a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}"
-              aria-selected="true"
+            <a class="nav-link" id="{{ section.id }}-tab" href="#{{section.id}}" role="tab"
+              aria-controls="{{section.id}}" aria-selected="true"
               style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
               {{section.name}}</a>
           </li>
@@ -267,7 +268,8 @@ layout: default
                       <div style="width: 160pt">Shanghai, China</div>
                     </td>
                     <td>
-                      <a href="https://jcxy.sues.edu.cn/ICOTA2026/27096/list.htm" target="_blank" rel="noopener"> 2026 International Conference on Optimization: Techniques and Applications
+                      <a href="https://jcxy.sues.edu.cn/ICOTA2026/27096/list.htm" target="_blank" rel="noopener"> 2026
+                        International Conference on Optimization: Techniques and Applications
                       </a>
                     </td>
                   </tr>
