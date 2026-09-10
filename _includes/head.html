@@ -46,15 +46,16 @@
 <!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
 
 <!-- Link to an external CSS file -->
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/css/main.css">
-<!-- BootStrap CDN -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<script src="https://kit.fontawesome.com/{{ site.font_awesome_id }}.js" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+
+
+
 
 {% if site.comments %}
 <!--  GIT TALK CDN  for comment system -->
@@ -107,16 +108,16 @@
 
 <!-- JavaScript & No-JavaScript tags -->
 
-<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+
+
 <!-- and it's easy to individually load additional languages -->
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+
 <!--
 <script>
     $(document).ready(function() {
@@ -139,3 +140,7 @@
 <noscript>
   <!-- No JS alternative -->
 </noscript>
+
+<meta name="theme-color" content="#0B1120">
+<link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+<script src="{{ "/assets/js/site.js" | relative_url }}" defer></script>

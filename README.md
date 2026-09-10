@@ -34,3 +34,9 @@ Open http://127.0.0.1:4000 for the local preview. Dependencies are locked in `Ge
 GitHub Pages must use **GitHub Actions** as its publishing source. The workflow in `.github/workflows/jekyll.yml` reads `.ruby-version`, installs the locked dependencies, builds the site, checks the generated output, and deploys on pushes to `master`. It can also be run manually in GitHub Actions.
 
 Before committing, review `git status` and `git diff`, including any CV changes. Build and run the checks above, commit the intended files, then push to `master`. Confirm that the build and deployment jobs finish successfully in GitHub Actions.
+
+## Appearance
+
+The homepage uses an obsidian background and mint accents. Color tokens and responsive layout rules are in `css/main.css`; font loading is in `_includes/head.html`. Headings use Space Grotesk, body text uses Inter, and dates use IBM Plex Mono, with system font fallbacks.
+
+`_includes/geometry.html` contains the decorative SVG. Its subtle animation respects reduced-motion preferences. `assets/js/site.js` handles the research tabs, including keyboard navigation and direct links such as `/#projects`. Without JavaScript, all research sections remain readable. Older homepage updates are kept in an expandable section in `_layouts/home.html`.

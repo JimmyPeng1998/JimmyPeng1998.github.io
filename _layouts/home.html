@@ -1,217 +1,84 @@
 ---
 layout: default
 ---
-{% assign theme = site.data.themes[site.ui_theme] %}
-
-<!--  HELP TIPS SECTION  -->
-<!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
-{% if site.help_tips %}
-<div class="toast animate__animated animate__pulse animate__infinite" role="alert" aria-live="assertive"
-  aria-atomic="true" data-autohide="false" data-delay="10000"
-  style="position: absolute; top: 10px; right: 10px;z-index: 10000;">
-  <div class="toast-header">
-    <img src="/assets/img/icons/favicon-16x16.png" class="rounded mr-2" alt="...">
-    <strong class="mr-auto">Tyler Butler</strong>
-    <small class="text-muted">11 mins ago</small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="toast-body">
-    Thanks for checking out Jekyll-Theme-Dumbarton ! This theme was developed by <a
-      href="https://twitter.com/tbutler0x90">Tyler Butler</a>. If you're interested in using this in your own website,
-    checkout the project on <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton">Github</a>
-  </div>
-</div>
-{% endif %}
-
-<!-- ABOUT ME SECTION -->
-<div class="card mx-auto border-0" style="position:relative;background-color:{{theme.home-background-color}};">
-  <div class="row">
-    <div class="col-md-4">
-      {% if site.animate %}
-      <img src="{{ site.profile_image }}"
-        class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
-      {% else %}
-      <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
-      {% endif %}
-      <p>
-
-      </p>
-
-      <center>
-        <font size="5">Renfeng Peng (彭任锋)</font><br>
-        <font size="4" color="#919191">Research Assistant at City University of Hong Kong</font>
-      </center>
-      <p>
-
-      </p>
-      <center>
-        <a itemprop="sameAs" href="https://www.researchgate.net/profile/Renfeng_Peng" target="_blank" rel="noopener">
-          <i style="font-size: 32px;" class="ai ai-researchgate big-icon"></i>
-        </a>
-        &nbsp;
-        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=7CSaSTwAAAAJ&hl=zh-CN" target="_blank"
-          rel="noopener">
-          <i style="font-size: 32px;" class="ai ai-google-scholar big-icon"></i>
-        </a>
-        &nbsp;
-        <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <a itemprop="sameAs" href="https://github.com/JimmyPeng1998" target="_blank" rel="noopener">
-          <i style="font-size: 32px;" class="fa fa-github big-icon"></i>
-        </a>
-        &nbsp;
-        <a itemprop="sameAs" href="mailto:{{ site.email }}">
-          <i style="font-size: 32px;" class="fa fa-envelope big-icon"></i>
-        </a>
-        &nbsp;
-        <a itemprop="sameAs" href="/assets/pdf/Renfeng_CV.pdf">
-          <i style="font-size: 32px;" class="ai ai-cv big-icon"></i>
-        </a>
-      </center>
-      <!-- 
-            <ul class="network-icon" aria-hidden="true">
-            </ul>
-            You can add cv at any time!
-            <a itemprop="sameAs" href="/files/cv.pdf">
-              <i class="ai ai-cv big-icon"></i>
-            </a>
-            -->
+<section class="profile-hero" id="about" aria-labelledby="profile-name">
+  {% include geometry.html %}
+  <aside class="profile-rail">
+    <img class="portrait" src="{{ site.profile_image | relative_url }}" alt="Renfeng Peng" width="1044" height="752">
+    <p class="profile-chinese" lang="zh">彭任锋</p>
+    <p class="profile-role">Research Assistant</p>
+    <p class="profile-affiliation">City University of Hong Kong</p>
+    <div class="profile-links">
+      <a href="https://scholar.google.com/citations?user=7CSaSTwAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Scholar</a>
+      <a href="https://github.com/JimmyPeng1998" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="{{ '/assets/pdf/Renfeng_CV.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
+      <a href="https://www.researchgate.net/profile/Renfeng_Peng" target="_blank" rel="noopener">ResearchGate <span aria-hidden="true">↗</span></a>
+      <a href="mailto:{{ site.email }}">Email <span aria-hidden="true">↗</span></a>
     </div>
-    <!-- EDUCATION SECTION -->
-    <div class="col-md-8">
-      {% if site.animate %}
-      <div class="card-body animate__animated animate__fadeInRight" style="color:{{theme.education-font-color}};">
-        {% else %}
-        <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
-          {% endif %}
-          <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}</p>
-          <h3 id="i-class-fas-fa-rss-i-updates"><i class="fa fa-rss"></i> Updates</h3>
-          <ul>
-            <li>2026-04-29: I have successfully defended my PhD dissertation.</li>
-            <li>2026-01-30: new preprint “<a href="https://arxiv.org/abs/2601.21874">Quotient geometry of tensor ring
-                decomposition</a>.”</li>
-            <li>2025-11-06: new preprint “<a href="https://arxiv.org/abs/2511.04369">Normalized tensor train
-                decomposition</a>.”</li>
-            <li>2025-05-02: new paper accepted in <i>SIAM Journal on Matrix Analysis and Applications</i> - “<a
+  </aside>
+  <div class="profile-main">
+    <div class="biography">{{ content | replace: '<h3 id="renfeng-peng">', '<h1 id="profile-name">' | replace: '</h3>', '</h1>' }}</div>
+    <ul class="research-tags" aria-label="Research interests">
+      <li>Tensor optimization</li><li>Manifold optimization</li><li>Machine learning</li>
+    </ul>
+    <div class="profile-details">
+      <section class="updates" aria-labelledby="updates-heading">
+        <h2 id="updates-heading">Updates</h2>
+        <ul class="updates-list"><li><time datetime="2026-04-29">2026-04-29</time><div>I have successfully defended my PhD dissertation.</div></li>
+<li><time datetime="2026-01-30">2026-01-30</time><div>new preprint “<a href="https://arxiv.org/abs/2601.21874">Quotient geometry of tensor ring
+                decomposition</a>.”</div></li></ul>
+        <details class="older-updates"><summary>Earlier updates <span aria-hidden="true">+</span></summary><ul class="updates-list"><li><time datetime="2025-11-06">2025-11-06</time><div>new preprint “<a href="https://arxiv.org/abs/2511.04369">Normalized tensor train
+                decomposition</a>.”</div></li>
+<li><time datetime="2025-05-02">2025-05-02</time><div>new paper accepted in <i>SIAM Journal on Matrix Analysis and Applications</i> - “<a
                 href="https://doi.org/10.1137/24M1643773">Optimization on product manifolds under a preconditioned
-                metric</a>.”</li>
-            <li>2025-04-12: new conference paper accepted in <i>ISIT 2025</i>- “<a
-                href="https://doi.org/10.1109/ISIT63088.2025.11195337">Riemannian optimization for Holevo capacity</a>.”
-            </li>
-            <li>2025-03-07: new preprint - “<a href="https://arxiv.org/abs/2503.04523">First-order methods on
-                bounded-rank tensors converging to stationary points</a>.”
-            </li>
-            <li>2025-01-22: new preprint - “<a href="https://arxiv.org/abs/2501.11576">Riemannian optimization for
-                Holevo capacity</a>.”
-            </li>
-            <!--2024 dates
-            <li>2024-12-13: new paper accepted in <i>Mathematical Programming</i> - “<a
-                href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker tensor varieties</a>.”
-            </li>
-            <li>2024-11-22: new preprint - “<a href="https://arxiv.org/abs/2411.14093">Desingularization of bounded-rank
-                tensor sets</a>.”
-            </li>
-            <li>2024-01-18: new paper accepted in <i>Computational Optimization and Applications</i> - “<a
-                href="https://doi.org/10.1007/s10589-024-00559-7">Riemannian preconditioned algorithms for tensor
-                completion via tensor ring decomposition</a>.”
-            </li>
-            -->
-            <!--
-            <li>2023-12-01: new preprint - “<a href="https://arxiv.org/abs/2311.18324">Low-rank optimization on Tucker tensor varieties</a>.”
-            </li>
-            <li>2023-06-15: new preprint - “<a href="https://arxiv.org/abs/2306.08873">Optimization on product manifolds under a preconditioned metric</a>.”
-            </li>-->
-          </ul>
-          <!--
-          <h3 id="i-class-fas-fa-rss-i-updates"><i class="fas fa-ad"></i> Looking for a Postdoctoral Position (from July 2026)</h3>
-          <p>I am currently seeking a postdoctoral position starting in July 2026. Please feel free to contact me if you think there might be a good fit.</p>
-          -->
-          {% if site.home_option == "education" %}
-          {% include education.html %}
-          {% endif %}
-        </div>
-      </div>
+                metric</a>.”</div></li>
+<li><time datetime="2025-04-12">2025-04-12</time><div>new conference paper accepted in <i>ISIT 2025</i>- “<a
+                href="https://doi.org/10.1109/ISIT63088.2025.11195337">Riemannian optimization for Holevo capacity</a>.”</div></li>
+<li><time datetime="2025-03-07">2025-03-07</time><div>new preprint - “<a href="https://arxiv.org/abs/2503.04523">First-order methods on
+                bounded-rank tensors converging to stationary points</a>.”</div></li>
+<li><time datetime="2025-01-22">2025-01-22</time><div>new preprint - “<a href="https://arxiv.org/abs/2501.11576">Riemannian optimization for
+                Holevo capacity</a>.”</div></li></ul></details>
+      </section>
+      <section aria-labelledby="education-heading">{% include education.html %}</section>
     </div>
   </div>
-
-  <!-- style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }}; -->
-
-  <!-- HOME HIGHLIGHTS SECTION -->
-  {% if site.animate %}
-  <div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border"
-    style="max-width: 100%;">
-    {% else %}
-    <div class="card mx-auto mb-1 border-0" style="max-width: 100%;">
-      {% endif %}
-      <div class="card-header" style="background-color:{{ theme.home-highlight-background }};">
-        <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
-          {% for section in site.data.sections %}
-          {% if section.first %}
-          <li class="nav-item">
-            <a class="nav-link shadow-none" id="{{ section.id }}-tab" href="#{{section.id}}" role="tab"
-              aria-controls="{{section.id}}" aria-selected="true"
-              style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
-              {{section.name}}</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" id="{{ section.id }}-tab" href="#{{section.id}}" role="tab"
-              aria-controls="{{section.id}}" aria-selected="true"
-              style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
-              {{section.name}}</a>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="card-body">
-        <div class="tab-content mt-3">
-          {% for section in site.data.sections %}
+</section>
+<section class="research-section" aria-label="Research and academic activities">
+  <nav class="research-tabs" aria-label="Research sections">
+    {% for section in site.data.sections %}
+    <a id="{{ section.id }}-tab" href="#{{ section.id }}">{{ section.name | replace: 'Softwares', 'Software' | replace: 'Selected awards', 'Awards' }}</a>
+    {% endfor %}
+  </nav>
+  <div class="research-content">
+{% for section in site.data.sections %}
           {% if section.first %}
           {% if section.name == "Publications" %}
-          <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-            <div style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px;">
+          <div class="research-panel" id="{{section.id}}" tabindex="0">
+            <div>
               <p>{{section.description}}</p>
             </div>
-            <p class="card-text">{% bibliography -f papers %}</p>
+            {% bibliography -f papers %}
 
-            <div class="thesis-entry" style="font-family: sans-serif; line-height: 1.6; margin-bottom: 20px;">
-              <!-- 標題與圖示 -->
-              <div style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px;">
+            <div class="thesis-entry">
+
+              <div>
                 🎓 Thesis
               </div>
 
-              <!-- 論文資訊 -->
-              <div style="margin-bottom: 12px; color: #333;">
+
+              <div>
                 低秩张量优化问题的几何方法,
                 <em>Geometric methods for low-rank tensor optimization.</em>
                 Ph.D. thesis, University of Chinese Academy of Sciences (2026, in Chinese).
               </div>
 
-              <!-- 按鈕組 -->
+
               <div class="links">
-                <a href="/assets/pdf/Thesis_Renfeng.pdf" target="_blank" style="
-                        display: inline-block;
-                        padding: 6px 12px;
-                        background-color: #007bff;
-                        color: white;
-                        text-decoration: none;
-                        border-radius: 4px;
-                        font-size: 14px;
-                        margin-right: 10px;">
+                <a href="/assets/pdf/Thesis_Renfeng.pdf" target="_blank">
                   📄 PDF
                 </a>
 
-                <a href="/assets/pdf/Thesis_defense_Renfeng.pdf" target="_blank" style="
-                        display: inline-block;
-                        padding: 6px 12px;
-                        background-color: #6c757d;
-                        color: white;
-                        text-decoration: none;
-                        border-radius: 4px;
-                        font-size: 14px;">
+                <a href="/assets/pdf/Thesis_defense_Renfeng.pdf" target="_blank">
                   📊 Slides
                 </a>
               </div>
@@ -222,13 +89,13 @@ layout: default
 
 
           {% else %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
+          <div class="research-panel" id="{{section.id}}" tabindex="0">
             <p class="card-text">{{section.description}}</p>
           </div>
           {% endif %}
           {% else %}
           {% if section.name == "Softwares" %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+          <div class="research-panel" id="{{section.id}}" tabindex="0" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
             {% for projects in site.data.projects %}
             <div class="media mt-2">
@@ -237,18 +104,13 @@ layout: default
               <div class="media-body">
                 <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
                 {{ projects.description }}
-                <!--{% if projects.tech %}
-                            <h6><mark><u>Technologies</u></mark></h6> 
-                            {% for tech in projects.tech %}
-                            <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
-                            {% endfor %}
-                          {% endif %}-->
+
               </div>
             </div>
             {% endfor %}
           </div>
           {% elsif section.name == "Presentations" %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+          <div class="research-panel" id="{{section.id}}" tabindex="0" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
             <div class="mbtablestyle">
               <table>
@@ -262,10 +124,10 @@ layout: default
                 <tbody>
                   <tr>
                     <td>
-                      <div style="width: 80pt">2026/04</div>
+                      <div>2026/04</div>
                     </td>
                     <td>
-                      <div style="width: 160pt">Shanghai, China</div>
+                      <div>Shanghai, China</div>
                     </td>
                     <td>
                       <a href="https://jcxy.sues.edu.cn/ICOTA2026/27096/list.htm" target="_blank" rel="noopener"> 2026
@@ -275,10 +137,10 @@ layout: default
                   </tr>
                   <tr>
                     <td>
-                      <div style="width: 80pt">2025/08</div>
+                      <div>2025/08</div>
                     </td>
                     <td>
-                      <div style="width: 160pt">Harbin, China</div>
+                      <div>Harbin, China</div>
                     </td>
                     <td>
                       <a href="https://lsec.cc.ac.cn/~icnonla25/info.html" target="_blank" rel="noopener"> The 15th
@@ -288,10 +150,10 @@ layout: default
                   </tr>
                   <tr>
                     <td>
-                      <div style="width: 80pt">2025/07</div>
+                      <div>2025/07</div>
                     </td>
                     <td>
-                      <div style="width: 160pt">Los Angeles, U.S.</div>
+                      <div>Los Angeles, U.S.</div>
                     </td>
                     <td>
                       <a href="https://iccopt2025usc.sched.com/event/1dqqC/parallel-sessions-6q-optimization-on-riemannian-manifolds-and-stratified-sets-22"
@@ -301,10 +163,10 @@ layout: default
                   </tr>
                   <tr>
                     <td>
-                      <div style="width: 80pt">2024/11</div>
+                      <div>2024/11</div>
                     </td>
                     <td>
-                      <div style="width: 160pt">Beijing, China</div>
+                      <div>Beijing, China</div>
                     </td>
                     <td> The 7th PKU PhD Symposium for Applied Mathematics
                     </td>
@@ -314,7 +176,7 @@ layout: default
             </div>
           </div>
           {% elsif section.name == "Selected awards" %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+          <div class="research-panel" id="{{section.id}}" tabindex="0" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
             <table>
               <thead>
@@ -327,10 +189,10 @@ layout: default
               <tbody>
                 <tr>
                   <td>
-                    <div style="width: 80pt">2026/06</div>
+                    <div>2026/06</div>
                   </td>
                   <td>
-                    <div style="width: 240pt">CAS President's Outstanding Award</div>
+                    <div>CAS President's Outstanding Award</div>
                   </td>
                   <td>
                     <a href="https://www.cas.cn/" target="_blank" rel="noopener"> CAS
@@ -339,22 +201,10 @@ layout: default
                 </tr>
                 <tr>
                   <td>
-                    <div style="width: 80pt">2025/09</div>
+                    <div>2025/09</div>
                   </td>
                   <td>
-                    <div style="width: 240pt">AMSS President's Special Award</div>
-                  </td>
-                  <td>
-                    <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div style="width: 80pt">2024/09</div>
-                  </td>
-                  <td>
-                    <div style="width: 240pt">Loo-Keng Hua Scholarship</div>
+                    <div>AMSS President's Special Award</div>
                   </td>
                   <td>
                     <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS
@@ -363,10 +213,22 @@ layout: default
                 </tr>
                 <tr>
                   <td>
-                    <div style="width: 80pt">2021/09</div>
+                    <div>2024/09</div>
                   </td>
                   <td>
-                    <div style="width: 240pt">Loo-Keng Hua Scholarship</div>
+                    <div>Loo-Keng Hua Scholarship</div>
+                  </td>
+                  <td>
+                    <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>2021/09</div>
+                  </td>
+                  <td>
+                    <div>Loo-Keng Hua Scholarship</div>
                   </td>
                   <td>
                     <a href="http://english.amss.cas.cn/" target="_blank" rel="noopener"> AMSS </a>
@@ -376,7 +238,7 @@ layout: default
             </table>
           </div>
           {% elsif section.name == "Teaching" %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+          <div class="research-panel" id="{{section.id}}" tabindex="0" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
             {% for courses in site.data.teaching %}
             <div class="list-group">
@@ -393,7 +255,7 @@ layout: default
             {% endfor %}
           </div>
           {% elsif section.name == "Coursework" %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+          <div class="research-panel" id="{{section.id}}" tabindex="0" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
             <div class="list-group">
               {% for courses in site.data.courses %}
@@ -402,7 +264,7 @@ layout: default
             </div>
           </div>
           {% else %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+          <div class="research-panel" id="{{section.id}}" tabindex="0" aria-labelledby="{{section.id}}-tab">
             <h5 class="card-title text-center"><a href="/{{ section.url }}"
                 class="highlighted">{{section.description}}</a></h5>
             <p class="card-text">{{ section.content }} </p>
@@ -410,42 +272,6 @@ layout: default
           {% endif %}
           {% endif %}
           {% endfor %}
-        </div>
-      </div>
-    </div>
+
   </div>
-
-
-
-  <!-- ANIMATE.JS ANIMATE LIBRARY
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
--->
-
-
-  <!--JS FUNCTION FOR RECENT WORK SECTION -->
-  <script>
-    $('#test-list a').on('click', function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    })
-  </script>
-
-  <!-- OPTIONAL TOAST JS FUNCTION-->
-  <script>
-    $(document).ready(function () {
-      $(".toast").toast("show");
-    });
-  </script>
-
-
-  <script>
-    $('body').scrollspy({ target: '#list-example' })
-  </script>
-
-  <script>
-    $('.collapse').collapse()
-  </script>
-
-  <script>
-    $('.show').show()
-  </script>
+</section>

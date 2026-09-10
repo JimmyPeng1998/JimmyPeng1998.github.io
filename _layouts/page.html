@@ -1,36 +1,9 @@
 <!DOCTYPE html>
-{% assign theme = site.data.themes[site.ui_theme] %}
 <html lang="en">
-  <head>
-    {% include head-blog.html %}
-  </head>
-  <body>
-    {% include nav.html %}
-    <div class="container">
-      {% if page.header-img %}
-      <div class="card border-0">
-          <div class="card-body">
-            <p class="card-text">
-                {{ content }}
-            </p>
-            {% if page.last-updated %}
-              <p class="card-text"><small class="text-muted">This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</small></p>
-            {% endif %}
-          </div>
-      </div>
-      {% else %}
-      <div class="card border-0">
-          <div class="card-body">
-            <p class="card-text">
-                {{ content }}
-            </p>
-            {% if page.last-updated %}
-              <p class="card-text"><small class="text-muted">This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</small></p>
-            {% endif %}
-          </div>
-      </div>
-      {% endif %}
-    </div>
-    {% include footer.html %}
-  </body>
+<head>{% include head.html %}</head>
+<body>
+  {% include nav.html %}
+  <main class="container standalone-page" id="main-content">{{ content }}</main>
+  {% include footer.html %}
+</body>
 </html>

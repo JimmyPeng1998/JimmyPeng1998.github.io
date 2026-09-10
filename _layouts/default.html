@@ -1,50 +1,18 @@
 <!DOCTYPE html>
-{% assign theme = site.data.themes[site.ui_theme] %}
 <html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body style="background-color:{{theme.background-color}};">
-    {% include nav.html %}
-    <div class="dumbarton-spacer-sm"></div>
-    <div class="container">
-      {{ content }}
-    </div>    
-    <div class="dumbarton-spacer"></div>
-    <div class="container"> 
-      <div class="row contact-widget">
-        <div class="col-12 col-lg-4 section-heading">
-          <h1>Contact</h1>
-        </div>
-        <div class="col-12 col-lg-8">
-          <ul class="fa-ul" itemscope="">
-            <li>
-              <i class="fa-li fa fa-envelope fa-lg" aria-hidden="true"></i>
-              <span id="person-email" itemprop="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
-            </li>
-            <!--
-            <li>
-              <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-              <span id="person-telephone" itemprop="telephone">Office: (+86)10-82541028</span>
-            </li>
-            -->
-            <li>
-              <i class="fa-li fa fa-map-marker fa-lg" aria-hidden="true"></i>
-              <span id="person-address" itemprop="address">{{ site.address }}</span>
-            </li>
-          </ul>
-        </div>
-
+<head>{% include head.html %}</head>
+<body>
+  {% include nav.html %}
+  <main class="container" id="main-content">{{ content }}</main>
+  <section class="contact-section container" id="contact" aria-labelledby="contact-heading">
+    <div><p class="eyebrow">GET IN TOUCH</p><h2 id="contact-heading">Contact</h2></div>
+    <div class="contact-details"><a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }}</a><p>{{ site.address }}</p></div>
         <div class="widgetContainer" style="width:200px;">
           <script type="text/javascript" id="mmvst_globe"
             src="https://mapmyvisitors.com/globe.js?d=MIOOhtTEM618VeBGbbwtRwHcM-Aqu67eKumVwZfLU_g">
           </script>
         </div>
-
-
-      </div>
-    </div>
-    <div class="dumbarton-spacer"></div>
-    {% include footer.html %}
-  </body>
+  </section>
+  {% include footer.html %}
+</body>
 </html>
