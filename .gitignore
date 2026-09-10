@@ -3,9 +3,20 @@
 .jekyll-cache
 .sass-cache
 _site
-Gemfile.lock
 
 # Demo Site 
 /Demo
 *.sh 
 *.xml
+# Local metadata and LaTeX build output
+.DS_Store
+*.aux
+*.log
+*.out
+*.bbl
+*.bcf
+*.blg
+*.synctex.gz
+*.run.xml
+*.cut
+vendor/
