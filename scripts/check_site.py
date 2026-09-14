@@ -40,10 +40,10 @@ for name in ('index.html', 'publications.html'):
             errors.append(f'{name}: missing {required}')
 for name in ('index.html', 'contact.html'):
     text = (root / name).read_text() if (root / name).exists() else ''
-    for required in ('Workstation 7, Room 215, Innovation Centre, 72 Tat Chee Avenue', 'pengrenfeng@lsec.cc.ac.cn'):
+    for required in ('Workstation 7, Room 215, Innovation Centre, 72 Tat Chee Avenue', 'renfpeng (a.t.) cityu.edu.hk'):
         if required not in text:
             errors.append(f'{name}: missing contact information {required}')
-    for unwanted in ('LanBai', 'John Doe', 'data-netlify', 'BEGIN PGP', 'jquery-3.3.1', 'gitalk.min.js', 'googletagmanager.com'):
+    for unwanted in ('mailto:', 'pengrenfeng@lsec.cc.ac.cn', 'renfpeng@cityu.edu.hk', 'LanBai', 'John Doe', 'data-netlify', 'BEGIN PGP', 'jquery-3.3.1', 'gitalk.min.js', 'googletagmanager.com'):
         if unwanted in text:
             errors.append(f'{name}: unexpected {unwanted}')
 if errors:

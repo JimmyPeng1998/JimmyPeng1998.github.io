@@ -53,9 +53,12 @@
   %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
 %  \usepackage{FiraSans}
   \setmainfont[
-  UprightFont = * Light,
-  BoldFont    = * Regular
-  ]{Fira Sans}
+  Extension   = .otf,
+  UprightFont = *-Light,
+  BoldFont    = *-Regular,
+  ItalicFont  = *-LightItalic,
+  BoldItalicFont = *-Italic
+  ]{FiraSans}
   \linespread{1.03}
 %  \usepackage[p,osf,swashQ]{cochineal}
 %  \usepackage[medium,bold]{cabin}
@@ -92,13 +95,15 @@
 \leftheader{%
   {\LARGE\bfseries\sffamily Renfeng Peng}
 
-  \makefield{\faEnvelope[regular]}{\href{mailto:pengrenfeng@lsec.cc.ac.cn}{\texttt{pengrenfeng a.t. lsec.cc.ac.cn}}}  \makefield{\faGlobe}{\url{http://jimmypeng1998.github.io/}}
+  \makefield{\faEnvelope[regular]}{\texttt{renfpeng (a.t.) cityu.edu.hk}}
+
+  \makefield{\faGlobe}{\url{http://jimmypeng1998.github.io/}}
 
   \makefield{\faBirthdayCake}{Sept. 30th, 1998, Changde, Hunan}
   ~\makefield{\faGoogle}{\href{https://scholar.google.com/citations?user=7CSaSTwAAAAJ&hl=zh-CN}{Renfeng Peng at Google scholar}}
   % \makefield{\faPhone}{0086 18874831973}
 
-  \makefield{\faMapMarker}{Room 101, Lanbai Building, No.55, East Zhongguancun Road, Beijing 100190, China}
+  \makefield{\faMapMarker}{Workstation 7, Room 215, Innovation Centre, 72 Tat Chee Avenue, Kowloon Tong, Kowloon, Hong Kong}
   % fontawesome5 doesn't have the X icon so we use
   % the simpleicons package here instead; but some 
   % font size adjustment might be needed
@@ -121,7 +126,7 @@
 \begin{document}
 \makeheaders[c]
 
-% \makerubric{employment}
+\makerubric{employment}
 \makerubric{education}
 %\makerubric{work}
 
