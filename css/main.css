@@ -510,11 +510,25 @@ p {
   display:flex;
 }
 
-.research-panel .media img {
-  width:32px;
-  height:32px;
-  object-fit:contain;
-  border-radius:5px;
+.software-icon {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 40px;
+  width:40px;
+  height:40px;
+  color:var(--accent);
+  background:rgba(69,224,193,.08);
+  border:1px solid rgba(69,224,193,.25);
+  border-radius:8px;
+  transition:border-color .18s ease,background-color .18s ease;
+}
+
+.research-panel .media:hover .software-icon,
+.research-panel .media:focus-within .software-icon {
+  color:var(--accent);
+  background:rgba(69,224,193,.12);
+  border-color:rgba(69,224,193,.6);
 }
 
 .research-panel .media-body {

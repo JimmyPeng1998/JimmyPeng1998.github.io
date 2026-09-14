@@ -99,8 +99,11 @@ layout: default
             <p><i>{{section.description}}</i></p>
             {% for projects in site.data.projects %}
             <div class="media mt-2">
-              <a href="{{ projects.link }}"><img src="{{ projects.image }}" width=30 height=30
-                  class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
+              <a href="{{ projects.link }}" class="software-icon" aria-label="{{ projects.name | escape }} source code">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="m7 6-5 6 5 6m10-12 5 6-5 6M14 4l-4 16" />
+                </svg>
+              </a>
               <div class="media-body">
                 <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
                 {{ projects.description }}
