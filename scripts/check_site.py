@@ -35,7 +35,7 @@ for path in root.rglob('*'):
         errors.append(f'Unexpected published source/build file: {path}')
 for name in ('index.html', 'publications.html'):
     text = (root / name).read_text() if (root / name).exists() else ''
-    for required in ('Quotient geometry of tensor ring decomposition', 'https://arxiv.org/abs/2601.21874', 'https://doi.org/10.1137/24M1643773', 'https://github.com/JimmyPeng1998/GeomNTT'):
+    for required in ('High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization', 'https://arxiv.org/abs/2609.30138', 'Quotient geometry of tensor ring decomposition', 'https://arxiv.org/abs/2601.21874', 'https://doi.org/10.1137/24M1643773', 'https://github.com/JimmyPeng1998/GeomNTT'):
         if required not in text:
             errors.append(f'{name}: missing {required}')
 for name in ('index.html', 'contact.html'):
