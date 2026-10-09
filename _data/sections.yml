@@ -18,7 +18,7 @@
 #   first: false
 
 - name: Softwares
-  id: projects
+  id: software
   description: 
   content: 
   url: projects.html

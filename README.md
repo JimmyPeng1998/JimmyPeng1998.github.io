@@ -39,4 +39,4 @@ Before committing, review `git status` and `git diff`, including any CV changes.
 
 The homepage uses an obsidian background and mint accents. Color tokens and responsive layout rules are in `css/main.css`; font loading is in `_includes/head.html`. Headings use Space Grotesk, body text uses Inter, and dates use IBM Plex Mono, with system font fallbacks.
 
-`_includes/geometry.html` contains the decorative SVG. Its subtle animation respects reduced-motion preferences. `assets/js/site.js` handles the research tabs, including keyboard navigation and direct links such as `/#projects`. Without JavaScript, all research sections remain readable. Older homepage updates are kept in an expandable section in `_layouts/home.html`.
+`_includes/geometry.html` contains the decorative SVG. Its subtle animation respects reduced-motion preferences. `assets/js/site.js` handles the research tabs, including keyboard navigation and direct links such as `/#software`. Without JavaScript, all research sections remain readable. Older homepage updates are kept in an expandable section in `_layouts/home.html`.
